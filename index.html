@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email List</title>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <div id="app">
+        <ul>
+            <li v-for="element in emailList">
+                <div class="container-list" v-if="emailList.length === 10">
+                    {{element}}
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
