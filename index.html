@@ -9,9 +9,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <div id="app">
-        <ul>
+        <ul v-if="emailList.length === 10">
             <li v-for="element in emailList">
-                <div class="container-list" v-if="emailList.length === 10">
+                <div class="container-list" >
                     {{element}}
                 </div>
             </li>
